@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十二时辰</title>
+    <!-- 网站的favicon图标 -->
+    <link rel="shortcut icon" href="clock.ico" />
+    <!-- 引入字体图标 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bace.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <!-- 头部版心盒子 -->
+        <div class="header-up w">
+            <!-- logo -->
+            <div class="logo1">
+                <div class="logo"><img src="img/logo (1).png" alt=""></div>
+            </div>
+            <div class="header-r">
+                <div class="header-top">
+                    <!-- 搜索框 -->
+                    <input type="text"><button><img src="image/搜索.png"><span>搜索</span></button>
+                    <span class="login"><a href="#">登录</a> / <a href="#">注销</a></span>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="mean-zishi.html">时辰之意<img src="image/小三角.png"></a>
+                            <div class="time">
+                                <a href="#">子时</a>
+                                <a href="#">丑时</a>
+                                <a href="#">寅时</a>
+                                <a href="#">卯时</a>
+                                <a href="#">辰时</a>
+                                <a href="#">巳时</a>
+                                <a href="#">午时</a>
+                                <a href="#">未时</a>
+                                <a href="#">申氏</a>
+                                <a href="#">酉时</a>
+                                <a href="#">戌时</a>
+                                <a href="#">亥时</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="work1.html">时辰之景</a>
+                        </li>
+                        <li>
+                            <a href="zodiac-shu.html">生肖之联<img src="image/小三角.png"></a>
+                            <div class="time">
+                                <a href="#">子鼠</a>
+                                <a href="#">丑牛</a>
+                                <a href="#">寅虎</a>
+                                <a href="#">卯兔</a>
+                                <a href="#">辰龙</a>
+                                <a href="#">巳蛇</a>
+                                <a href="#">午马</a>
+                                <a href="#">未羊</a>
+                                <a href="#">申猴</a>
+                                <a href="#">酉鸡</a>
+                                <a href="#">戌狗</a>
+                                <a href="#">亥猪</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="health-food.html">养生之时</a>
+                        </li>
+                        <li>
+                            <a href="own1.html">自创之物<img src="image/小三角.png"></a>
+                            <div class="time">
+                                <a href="create-zishi.html">子时</a>
+                                <a href="create-choushi.html">丑时</a>
+                                <a href="create-yinshi.html">寅时</a>
+                                <a href="create-maoshi.html">卯时</a>
+                                <a href="create-chenshi.html">辰时</a>
+                                <a href="create-sishi.html">巳时</a>
+                                <a href="create-wushi.html">午时</a>
+                                <a href="create-weishi.html">未时</a>
+                                <a href="create-shenshi.html">申时</a>
+                                <a href="create-youshi.html">酉时</a>
+                                <a href="create-xushi.html">戌时</a>
+                                <a href="create-haishi.html">亥时</a>
+                                <a href="own1.html">自创之物</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 轮播图主体 -->
+    <div class="swipe" id="swipe">
+        <!-- 模糊背景 -->
+        <div class="bg" id="swipe_bg"></div>
+        <!-- 图片区域 -->
+        <section>
+            <!-- 图片显示 -->
+            <div class="img-box" id="swipe_img_box">
+                <a href="#" class="link" id="swipe_link">
+                    <img src="image/lunbo (1).png" alt="" class="img" id="swipe_img">
+                </a>
+            </div>
+            <!-- 指示点 -->
+            <div class="select" id="swipe_select">
+                <!-- <a href="#" class="item checked"></a>
+            <a href="#" class="item"></a>
+            <a href="#" class="item"></a> -->
+            </div>
+            <!-- 左侧翻页按钮 -->
+            <div class="btn left" id="swipe_btn_left">
+                <!-- 字体图标：左箭头 -->
+                <i class="fa fa-angle-left" aria-hidden="true">
+                </i>
+            </div>
+            <!-- 右侧翻页按钮 -->
+            <div class="btn right" id="swipe_btn_right">
+                <!-- 字体图标：右箭头 -->
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </section>
+    </div>
+    <!-- 历史简介 -->
+    <div class="banner">
+        <div class="history w">
+            <ul>
+                <li>历史简介</li>
+                <li>Introduction to the history</li>
+            </ul>
+            <div class="history-up">
+                <div class="history-l">
+                    <span><img src="img/icon1.png" alt=""></span>
+                    <h3>十二时辰</h3>
+                    <p>古代劳动人民把一昼夜划分成十二个时段，每一个时段叫一个时辰。十二时辰既可以指一天，也可以指任何一个时辰。十二时辰是古代中国劳动人民根据一日间太阳出没的自然规律、天色的变化以及自己日常的生产活动、生活习惯而归纳总结、独创于世的。
+                    </p>
+                    <p>十二时辰制。西周时就已使用。汉代命名为夜半、鸡鸣、平旦、日出、食时、隅中、日中、日昳、晡时、日入、黄昏、人定。又用十二地支来表示...</p>
+                    <a href="index-reco.html"><button>了解更多 > </button></a>
+                </div>
+                <div class="history-r"><img src="img/deco1.png" alt=""></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 逐梦人时辰 -->
+    <div class="banner1">
+        <div class="dream">
+            <ul>
+                <li> 光阴故事</li>
+                <li>The time story</li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner2">
+        <div class="w">
+            <div class="slider owl-carousel">
+                <div class="print">
+                    <div class="img">
+                        <img src="image/lunbo (7).png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Briana Tozour</div>
+                        <div class="sub-title">Graphic Designer</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem
+                            quis quae animi nihil minus sed unde voluptas cumque.
+                        </p>
+                        <div class="btn"><button>Read More</button></div>
+                    </div>
+                </div>
+                <div class="print">
+                    <div class="img">
+                        <img src="image/lunbo (10).png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Pricilla Preez</div>
+                        <div class="sub-title">Web Developer</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem
+                            quis quae animi nihil minus sed unde voluptas cumque.
+                        </p>
+                        <div class="btn"><button>Read More</button></div>
+                    </div>
+                </div>
+                <div class="print">
+                    <div class="img">
+                        <img src="image/lunbo (13).png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Eliana Maia</div>
+                        <div class="sub-title">App Developer</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem
+                            quis quae animi nihil minus sed unde voluptas cumque.
+                        </p>
+                        <div class="btn"><button>Read More</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: false,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+    <div class="banner3">
+        <div class="live w">
+            <li class="one">养生时辰</li>
+            <li class="two">Curing time</li>
+            <li class="three">《黄帝内经》中提出了养生和时辰的密切关系，每个时辰对应人体一条经脉,每条经脉又联系着相应的脏腑。</li>
+            <ul class="keep">
+                <li><img src="img/bagua.png" alt=""><span>食养</span></li>
+                <li><img src="img/zhenjiu.png" alt=""><span>食养</span></li>
+                <li><img src="img/yaocai.png" alt=""><span>食养</span></li>
+                <li><img src="img/wan.png" alt=""><span>食养</span></li>
+            </ul>
+            <div class="down">
+                <p>养生就是指通过各种方法颐养生命、增强体质、预防疾病，从而达到延年益寿的一种医事活动。所谓生，就是生命、生存、生长之意；所谓养，即保养、调养、补养之意。总之，养生就是保养生命的意思。以传统中医理论为指导，遵循阴阳五行生化收藏之变化规律，对人体进行科学调养，保持生命健康活力。
+                </p>
+                <li></li>
+            </div>
+        </div>
+    </div>
+    <div class="banner4">
+        <div class="own w">
+            <ul class="title">
+                <li>自创之物</li>
+                <li>Own thing</li>
+            </ul>
+            <ul class="shou-time">
+                <li>
+                    <img src="img/own-xiang (6).jpg" alt="">
+                    <div class="mask">
+                        <h1>十二时辰香</h1>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/pinpai (5).png" alt="">
+                    <div class="mask">
+                        <h1>时辰包装</h1>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/youpiao (1).jpg" alt="">
+                    <div class="mask">
+                        <h1>时辰邮票</h1>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/tiepian1.png" alt="">
+                    <div class="mask">
+                        <h1>生肖铁片造型</h1>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 投稿栏 -->
+    <div class="banner5">
+        <div class="writer w">
+            <ul>
+                <li>十二时辰征稿</li>
+                <li>Solicit Contributions</li>
+                <li>
+                    <h1>书写说明</h1>
+                    <img src="img/text1.png" alt="">
+                </li>
+                <li>
+                    <h1>书写范文</h1><img src="img/text3.png" alt="">
+                </li>
+                <li>
+                    <h1><a href="index-text.html">提交文章</a><img class="latter" src="image/latter1.jpg" alt=""></h1>
+                    <img src="img/text4.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--     尾部栏     -->
+    <div class="last">
+        <div class="last-min w">
+            <li>Copyright©陕西科技大学镐京学院</li>
+            <li>地址：陕西省西安市西咸新区陕西科技大学镐京学院</li>
+            <li>邮箱：1295008647@qq.com &nbsp;&nbsp;电话：15129198696</li>
+            <div class="erweima">
+                <div class="erweima1"><img src="img/erweima1.jpg" alt=""></div>
+                <div class="erweima2"><img src="img/erweima2.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<!-- 轮播图js -->
+<script>
+    // 当前轮播图编号
+    let current_index = -1;
+    // 自动轮播定时器
+    let swipe_timer = null;
+    // 轮播图的图片地址与跳转链接
+    let links = [
+        { 'image': 'image/lunbo (1).png', 'target': '#1' },
+        { 'image': 'image/lunbo (2).png', 'target': '#2' },
+        { 'image': 'image/lunbo (3).png', 'target': '#3' },
+        { 'image': 'image/lunbo (4).png', 'target': '#4' },
+        { 'image': 'image/lunbo (5).png', 'target': '#5' },
+        { 'image': 'image/lunbo (6).png', 'target': '#6' }
+    ];
+
+    // 需要操作到的元素
+    let swipe = document.getElementById('swipe');
+    let swipe_bg = document.getElementById('swipe_bg');
+    let swipe_img_box = document.getElementById('swipe_img_box');
+    let swipe_link = document.getElementById('swipe_link');
+    let swipe_img = document.getElementById('swipe_img');
+    let swipe_select = document.getElementById('swipe_select');
+    let swipe_btn_left = document.getElementById('swipe_btn_left');
+    let swipe_btn_right = document.getElementById('swipe_btn_right');
+
+    // 事件
+    // 切换图片
+    let select = (index) => {
+        // 停止播放
+        stop();
+        // 转数字
+        index = Number(index);
+        // 越界超过最大数量,直接返回
+        if (index >= links.length) {
+            return;
+        }
+        // 选中当前已选中的,直接返回
+        if (current_index == index) {
+            return;
+        }
+        // 取消当前指示点的选中状态
+        if (current_index > -1) {
+            swipe_select.children[current_index].classList.remove('checked');
+        }
+        // 变更当前轮播图的编号
+        current_index = index;
+        // 找到当前元素
+        let current_link = links[current_index];
+        // 背景变化
+        swipe_bg.style.backgroundImage = 'url(' + current_link.image + ')';
+        // 前景变化
+        swipe_img.setAttribute('src', current_link.image);
+        // 链接变化
+        swipe_link.setAttribute('href', current_link.target);
+        // 增加新的指示点的选中状态
+        swipe_select.children[current_index].classList.add('checked');
+    };
+    // 自动切换图片
+    let autoSelect = (index) => {
+        // 转数字
+        index = Number(index);
+        // 越界超过最大数量，直接返回
+        if (index >= links.length) {
+            return;
+        }
+        // 选中当前已选中的，直接返回
+        if (current_index == index) {
+            return;
+        }
+        // 取消当前指示点的选中状态
+        swipe_select.children[current_index].classList.remove('checked');
+        // 变更当前轮播图的编号
+        current_index = index;
+        // 找到当前元素
+        let current_link = links[current_index];
+        // 前景图片
+        // 第一步调整过渡时间
+        swipe_img.style.transition = 'opacity 0.5s ease-in 0s';
+        // 第二步调整不透明度为0.2
+        swipe_img.style.opacity = 0.2;
+        // 第三步延迟变换img图片，并重新定义透明度以及过渡时间和过渡方式
+        setTimeout(() => {
+            // 背景变化
+            swipe_bg.style.backgroundImage = 'url(' + current_link.image + ')';
+            // 前景变化
+            swipe_img.setAttribute('src', current_link.image);
+            // 链接变化
+            swipe_link.setAttribute('href', current_link.target);
+            // 不透明度变化
+            swipe_img.style.transition = 'opacity 0.7s ease-out 0s';
+            swipe_img.style.opacity = 1;
+            // 增加新的指示点选中状态
+            // 如果已经通过手动点击了，选中则此处不再执行
+            if (!document.querySelector('.swipe .checked')) {
+                swipe_select.children[current_index].style.transition = 'background-color 0.5s';
+                swipe_select.children[current_index].classList.add('checked');
+            }
+        }, 500);
+    };
+    // 播放
+    let play = () => {
+        // 3秒切换一次
+        swipe_timer = setInterval(() => {
+            // 设置新的index
+            let index = current_index + 1;
+            // 右翻越界，切到第一张
+            if (index >= links.length) {
+                index = 0;
+            }
+            // 加载新图片（这里选择自动，增加切换效果）
+            autoSelect(index);
+        }, 3000);
+    };
+    // 停止
+    let stop = () => {
+        if (swipe_timer) {
+            clearInterval(swipe_timer);
+            swipe_timer = null;
+        }
+    };
+    // 初始化
+    let init = () => {
+        for (let i = 0; i < links.length; i++) {
+            // 创建a元素
+            let item = document.createElement('a');
+            // 修改属性
+            item.setAttribute('class', 'item');
+            item.setAttribute('href', '#');
+            item.setAttribute('data-index', i);
+            // 追加元素
+            swipe_select.appendChild(item);
+        }
+        // 默认第一张
+        select(0);
+        // 绑定各个事件并开始轮播
+        bind();
+        play();
+    };
+    // 绑定
+    let bind = () => {
+        // 左翻事件监听
+        swipe_btn_left.addEventListener('click', () => {
+            // 设置新的index
+            let index = current_index - 1;
+            // 左翻越界，切到最后一张
+            if (index < 0) {
+                index = links.length - 1;
+            }
+            // 加载新图片
+            select(index);
+        });
+        // 右翻事件监听
+        swipe_btn_right.addEventListener('click', () => {
+            // 设置新的index
+            let index = current_index + 1;
+            // 右翻越界，切到第一张
+            if (index >= links.length) {
+                index = 0;
+            }
+            // 加载新图片
+            select(index);
+        });
+        // 循环绑定指示器点击事件
+        for (const key in swipe_select.children) {
+            if (swipe_select.children.hasOwnProperty(key)) {
+                const element = swipe_select.children[key];
+                element.addEventListener('click', (e) => {
+                    // 取消默认点击跳转
+                    e.preventDefault();
+                    // 跳转到当前指示点中data-index所指定的图片
+                    select(e.target.dataset.index);
+                });
+            }
+        }
+        // 绑定鼠标移入事件
+        swipe.addEventListener('mouseover', (e) => {
+            // 防止鼠标从子元素移出时触发
+            if (e.relatedTarget && swipe.compareDocumentPosition(e.relatedTarget) == 10) {
+                stop();
+            }
+        });
+        // 绑定鼠标移出事件
+        swipe.addEventListener('mouseout', (e) => {
+            // 防止鼠标从子元素移出时触发
+            if (e.relatedTarget && swipe.compareDocumentPosition(e.relatedTarget) == 10) {
+                play();
+            }
+        });
+        // 绑定鼠标移动事件
+        swipe.addEventListener('mousemove', (e) => {
+            stop();
+        });
+    };
+
+    // 页面加载完毕，执行初始化
+    window.addEventListener('load', () => {
+        init();
+    })
+</script>
+</body>
+
+</html>
